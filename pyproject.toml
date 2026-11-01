@@ -1,0 +1,20 @@
+[project]
+name = "curva-pre"
+version = "0.1.0"
+description = "Construção da curva de juros pré brasileira a partir do DI futuro"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
